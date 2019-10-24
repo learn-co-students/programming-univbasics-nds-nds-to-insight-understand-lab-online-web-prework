@@ -15,7 +15,7 @@ index = 0
 mov_len = directors_database[0][:movies]
 
 while index < mov_len.length do
-   name = directors_database[0][:movies][:title]
+   name = directors_database[0][:movies][index][:title]
     
    puts "#{name}\n"
   
