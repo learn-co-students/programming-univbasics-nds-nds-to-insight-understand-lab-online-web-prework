@@ -1,5 +1,5 @@
 require 'spec_helper'
-
+require 'pp'
 describe 'When using "pp" to display complex data structures,' do
   it 'pretty_print_nds prints the nds it is passed using the build-in pretty-printer' do
     # Advanced Ruby code. It's used to temporarily override
