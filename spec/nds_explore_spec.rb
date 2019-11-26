@@ -25,8 +25,8 @@ describe 'When using "pp" to display complex data structures,' do
   end
 end
 
-describe 'When exploring the data structure using custom methods,' do
-  it 'print_first_directors_movie_titles loops over Spielberg’s movies and prints out their names with newlines' do
-    expect { print_first_directors_movie_titles }.to output("Jaws\nClose Encounters of the Third Kind\nRaiders of the Lost Ark\nE.T. the Extra-terrestrial\nSchindler's List\nLincoln\n").to_stdout
-  end
-end
+# describe 'When exploring the data structure using custom methods,' do
+#   it 'print_first_directors_movie_titles loops over Spielberg’s movies and prints out their names with newlines' do
+#     expect { print_first_directors_movie_titles }.to output("Jaws\nClose Encounters of the Third Kind\nRaiders of the Lost Ark\nE.T. the Extra-terrestrial\nSchindler's List\nLincoln\n").to_stdout
+#   end
+# end
