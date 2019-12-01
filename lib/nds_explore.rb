@@ -7,5 +7,6 @@ def pretty_print_nds(nds)
   nil
 end
 
+require 'pretty_print_nds'
 def print_first_directors_movie_titles
 end
