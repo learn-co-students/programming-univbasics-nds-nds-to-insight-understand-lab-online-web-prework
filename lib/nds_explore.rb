@@ -11,12 +11,12 @@ def print_first_directors_movie_titles
   ddbs = [ #First Level is an array [0]
     { # Hash of name and movies
     :name=>"Stephen Spielberg", # HASH [:name]
-  :movies=> # there is an array withing this value that is composed of hashes
-   [{:title=>"Jaws",
+  :movies=> # there is an array withing this value that is composed of hashes, 6 total elements
+   [{:title=>"Jaws", # [0]
      :studio=>"Universal",
      :worldwide_gross=>260000000,
      :release_year=>1975},
-    {:title=>"Close Encounters of the Third Kind",
+    {:title=>"Close Encounters of the Third Kind", #[1]
      :studio=>"Columbia",
      :worldwide_gross=>135189114,
      :release_year=>1977},
@@ -37,7 +37,11 @@ def print_first_directors_movie_titles
      :worldwide_gross=>182207973,
      :release_year=>2012}]}]
     puts ddbs[0][:movies][0][:title]
-    while ddbs[0][:movies]
+    current_movie = 0
+    while current_movie < ddbs[0][:movies].length do
+      puts ddbs[0][:movies][current_movie][:title]
+      current_movie += 1
+    end
 end
 
 # pretty_print_nds(directors_database)
