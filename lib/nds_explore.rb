@@ -36,8 +36,8 @@ def print_first_directors_movie_titles
      :studio=>"Buena Vista",
      :worldwide_gross=>182207973,
      :release_year=>2012}]}]
-    # puts ddbs[0][:movies][1][:title]
-     while 
+    puts ddbs[0][:movies][0][:title]
+    while ddbs[0][:movies]
 end
 
 # pretty_print_nds(directors_database)
